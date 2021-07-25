@@ -29,6 +29,10 @@ const sess = {
 };
 
 app.use(session(sess));
+const helpers = require('./utils/helpers');
+
+const hbs = exphbs.create({ helpers });
+
 
 sequelize.sync({ force: true }).then(() => {
     app.listen(PORT, () => console.log('Now listening!'))
