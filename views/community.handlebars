@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+{{!-- <link rel="stylesheet" href="stylesheets/community.css"> --}}
+{{!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
+<section>
+        <div class="row">
+            <div class="com-container">
+                <div class="box">
+                    {{!-- <div class="image">
+                        <img src="images/photo-1511671782779-c97d3d27a1d4.jpeg" alt="Microphone">
+                    </div> --}}
+                <center><div class="main">
+                    <form class="new-post-form">
+                        <textarea name="name" rows="8" cols="10" placeholder="What's on your mind?" id="post_content"></textarea>
+                        <button type="submit" id="save-post" onclick="submitPost()">POST</button>
+                    </form>
+                </div></center>
+                </div>
+            </div>
+        </div>
+
+        <!--Socket.io-->
+        <div>
+            
+        </div>
+
+</section>
+<script src="javascript/add-post.js"></script>
